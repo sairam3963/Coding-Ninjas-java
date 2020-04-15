@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Solution {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int i = 1;
+		int space = n;
+		while (i <= n) {
+			int j = 1;
+			while (j <= n - i) {
+				System.out.print(" ");
+				j++;
+			}
+			j = 1;
+			int p = i;
+			while (j <= i) {
+				System.out.print(p);
+				j++;
+				p++;
+			}
+			int k = 1;
+			p = (2 * i) - 2;
+			while (k <= i - 1) {
+				System.out.print(p);
+				p--;
+				k++;
+			}
+			i++;
+			System.out.println();
+		}
+
+	}
+
+}
