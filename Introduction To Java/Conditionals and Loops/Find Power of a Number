@@ -7,17 +7,16 @@ public class Solution {
 		Scanner sc = new Scanner(System.in);
 		int base = sc.nextInt();
 		int expo = sc.nextInt();
-		int mul = base;
-		if (base == 0) {
-			System.out.println(0);
-		} else if (expo == 0) {
-			System.out.println(1);
-		} else {
+		int result = base;
+
+		if (expo >= 1) {
 			for (int i = 1; i < expo; i++) {
-				mul = mul * base;
+				result = result * base;
 			}
-			System.out.println(mul);
+		} else {
+			result = 1;
 		}
+		System.out.println(result);
 	}
 
 }
