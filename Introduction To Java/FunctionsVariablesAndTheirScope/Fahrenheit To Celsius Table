@@ -1,0 +1,13 @@
+public class Solution {
+
+	public static void printFahrenheitTable(int start, int end, int step) {
+
+		while (start <= end) {
+			int cel = (int) ((5.0 / 9) * (start - 32));
+			System.out.println(start + " " + cel);
+			start = start + step;
+		}
+
+	}
+
+}
